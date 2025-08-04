@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create remove button
         const button = document.createElement('button');
-        button.textContent = 'Remove';
+        button.textContent = "remove";
         button.className = 'remove-btn';
 
         // Add click event to remove the task
-        button.onclick = function () {
+        button.addEventListener('onclick', function () {
             taskList.removeChild(li);
         };
 
